@@ -1,12 +1,63 @@
-# React + Vite
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/React-%2361DAFB.svg?style=for-the-badge&logo=react&logoColor=black" />
+  <img src="https://img.shields.io/badge/Vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white" />
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🍽️ Chef Claude
 
-Currently, two official plugins are available:
+**Chef Claude** is a web application that allows users to input available ingredients, then sends the data to an AI model on Hugging Face, which returns a recipe for a dish that can be prepared using those ingredients.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Getting Started
 
-## Expanding the ESLint configuration
+### 1. Clone the Repository
+```sh
+git clone https://github.com/username/chef-claude.git
+cd chef-claude
+```
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 2. Install Dependencies
+The application uses **React** with **Vite**. Before running the app, install the required packages:
+```sh
+npm install
+```
+
+### 3. Configure the `.env` File
+
+To use the Hugging Face API, you need to obtain an API key:
+1. Go to [Hugging Face](https://huggingface.co/).
+2. Create an account (if you don’t have one).
+3. Navigate to your account settings and generate an API key.
+4. Use this key in the `.env` file as shown below.
+
+Create a `.env` file based on `.env.example`:
+```sh
+cp .env.example .env
+```
+Then, add your values:
+```plaintext
+REACT_APP_HF_API_KEY=your_huggingface_api_key
+```
+
+### 4. Run the Application
+```sh
+npm run dev
+```
+The application will be available at `http://localhost:5174`.
+
+## 🛠️ How It Works
+1. The user enters the ingredients they have.
+2. The data is sent to a Hugging Face AI model.
+3. The model returns a recipe for a dish that can be prepared using the provided ingredients.
+4. The user receives a detailed recipe to follow.
+
+## 🧩 Technologies Used
+- **React** - Frontend framework
+- **Vite** - Build tool for fast development
+- **Hugging Face** - AI model for recipe generation
+
+---
+✨ Happy cooking with **Chef Claude**! 🍳
+
