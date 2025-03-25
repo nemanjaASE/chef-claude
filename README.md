@@ -53,6 +53,14 @@ The application will be available at `http://localhost:5174`.
 3. The model returns a recipe for a dish that can be prepared using the provided ingredients.
 4. The user receives a detailed recipe to follow.
 
+## 📸 Screenshot
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/26af9d27-089f-4aa6-8ce3-1c9d1079b0a0" alt="Start Screen" width="700"/>
+  <img src="https://github.com/user-attachments/assets/79256d3c-404d-455d-9e24-7e4b724ec77b" alt="Ingredients Input" width="700"/>
+  <img src="https://github.com/user-attachments/assets/41a0fec6-72e2-433f-a4f6-694cb5c5c21e" alt="Recipe Recommendation" width="700"/>
+</p>
+
 ## 🧩 Technologies Used
 - **React** - Frontend framework
 - **Vite** - Build tool for fast development
